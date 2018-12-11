@@ -24,6 +24,7 @@ int main(int argc, char* argv[])
 	std::string save_filename_buff;
 	cv::Mat buff;
 	int result;
+	int choice, count = 0;
 
 
 	// Detect if there are any command line args
@@ -34,7 +35,7 @@ int main(int argc, char* argv[])
 			}
 			else {
 				// Command line argument for convert image
-				if (strcmp(argv[i], "--convert") == 0) {
+				if (strcmp(argv[i], "--convert") == 0 && argv[i + 1] != NULL && argv[i + 2] != NULL) {
 					buff = loadImage(argv[i + 1]);
 					result = convImgMonochrome(buff, argv[i + 2]);
 					if (result > 0) {
@@ -48,10 +49,8 @@ int main(int argc, char* argv[])
 						std::cout << success_message << "\n[CTRL + C] to exit" << std::endl;
 						cv::waitKey(0);
 					}
-				}
-
-				// Command line argument for add blur in image
-				if (strcmp(argv[i], "--add-blur") == 0) {
+				} 
+				else if (strcmp(argv[i], "--add-blur") == 0 && argv[i + 1] != NULL && argv[i + 2] != NULL && argv[i + 3] != NULL) { // Command line argument for add blur in image
 					if (strcmp(argv[i + 1], "Gaussian Blur") == 0) {
 						buff = loadImage(argv[i + 2]);
 						result = gaussianBlur(buff, argv[i + 3]);
@@ -83,10 +82,15 @@ int main(int argc, char* argv[])
 						}
 					}
 				}
-
-				if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0) {
+				else if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0 && argv[i + 1] == NULL) {
 					help();
 				}
+				else {
+					std::cout << "Wrong Arguments" << std::endl;
+					break;
+				}
+
+				
 
 				// Command line argument for invert image
 				if (strcmp(argv[i], "--threshold") == 0) {
@@ -111,9 +115,6 @@ int main(int argc, char* argv[])
 		}
 	}
 	else {
-		
-
-		int choice, count = 0;
 		while (count = 1) {
 			mainMenu();
 			printf("#please type the single number of the menu you choose,\n");
@@ -207,11 +208,10 @@ int main(int argc, char* argv[])
 				break;
 
 			case 5:
-				break;
+				return 0;
 
 			default:
-				printf("please only input number between 1 to 5\n");
-				printf("as shown in menu...\n");
+				printf("\n\nInvalid Input.\nPlease only input number between 1 to 5\n");
 				printf("PRESS ENTER TO GO BACK TO MAIN MENU...\n");
 				system("pause");
 				count = 1;
@@ -316,8 +316,8 @@ void mainMenu() {
 	printf("     ______ |___|____________| /__|_______|_| /_____________|___|_______      \n");
 	printf("     ------------------------|/-------------|/---------------------------     \n");
 	printf("    |                                                                    |    \n");
-	printf("    | MonoChrome Image Converter (Command Windows) by Faiz A.R / Surya A |    \n");
-	printf("    |                by Faiz Ainur Rofiq / Surya Asmoro Y.P.             |    \n");
+	printf("    |           ImgProc : A Lightweight Image Processing Tools           |    \n");
+	printf("    |               by Faiz Ainur Rofiq / Surya Asmoro Y.P.              |    \n");
 	printf("    |____________________________________________________________________|    \n");
 	printf("     --------------------------------------------------------------------     \n");
 	printf("            |   |              == MAIN MENU ==              |   |             \n");
