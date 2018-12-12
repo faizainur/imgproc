@@ -27,3 +27,7 @@ any dependencies needed as shown above installed/available in your computer.
 
 2. Program won't to start</br>
 This problem occurs when the ```dll```s file needed is not found. Please copy all ```dll```s to installation/binaries directory
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
