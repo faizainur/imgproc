@@ -1,4 +1,4 @@
-# ImgProc : ALightweight Image Processing Tools
+# ImgProc : A Lightweight Image Processing Tools
 an open source project
 
 ## Description
@@ -19,7 +19,7 @@ To build this software, you need Visual Studio 2017 with Visual C++ Build Tools 
 2. Open ```FinalProject.sln``` file
 3. Navigate to ```Build``` menu and click ```Build``` or simply press ```Ctrl + Shift + B```</br></br>
 After build finished, you can find the binaries file inside ```<source-code-dir>\x64\<Debug | Release>```. Please copy ```dll```s files
-(get the ```dll```s files [here]()) to the binaries directory.
+(get the ```dll```s files [here](https://drive.google.com/file/d/12FJsw-BUbXrprhTwl99OwVylhVrUT6UL/view?usp=sharing)) to the binaries directory.
 ## Troubleshooting
 1. Build failed</br>
 This problem occurs might be caused by Build Tools failed to find dependencies in your computer. Please make sure that
