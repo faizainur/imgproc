@@ -2,7 +2,7 @@
 an open source project [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Description
-ImgProc is a lightweight software image processing tools available only on Windows 64 platform. This software able to perform
+ImgProc is a lightweight software image processing tools available only on Windows 64-bit platform. This software able to perform
 simple image processing technique such as converting image to grayscale/monochrome, noise reduction using gaussian blur and homogeneous blur.
 
 ## Requirements
