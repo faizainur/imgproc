@@ -11,7 +11,7 @@ simple image processing technique such as converting image to grayscale, noise r
 3. Visual Studio 2017 + Visual C++ build tools
 
 ## Download Installer
-Instead of build the software by yourself to get the binaries, you can download installer package for this project [here](https://sourceforge.net/projects/imgproc/files/imgproc-setup-alpha-release-100.zip/download)
+Instead of build the software by yourself to get the binaries, you can download installer package for this project [here](https://sourceforge.net/projects/imgproc/files/imgproc-setup-alpha-release-101.zip/download)
 
 ## Build source code
 Get the source code: </br>
