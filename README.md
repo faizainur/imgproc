@@ -10,6 +10,9 @@ simple image processing technique such as converting image to grayscale/monochro
 2. OpenCV Library (more information [click here](https://opencv.org/)
 3. Visual Studio 2017 + Visual C++ build tools
 
+## Download Installer
+Instead of build the software by yourself to get the binaries, you can download installer package for this project [here](https://sourceforge.net/projects/imgproc/files/imgproc-setup-alpha-release-100.zip/download)
+
 ## Build source code
 Get the source code: </br>
 ```git clone https://github.com/faizainur/imgproc```</br></br>
