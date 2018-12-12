@@ -24,7 +24,7 @@ int main(int argc, char* argv[])
 	std::string save_filename_buff;
 	cv::Mat buff;
 	int result;
-	int choice, count = 0;
+	int choice, count;
 
 
 	// Detect if there are any command line args
@@ -116,6 +116,8 @@ int main(int argc, char* argv[])
 	}
 	else {
 		while (count = 1) {
+			count = 0;
+			system("cls");
 			mainMenu();
 			printf("#please type the single number of the menu you choose,\n");
 			printf(" and then press enter to select it\n\n");
