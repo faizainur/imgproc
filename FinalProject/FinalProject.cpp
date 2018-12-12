@@ -85,16 +85,8 @@ int main(int argc, char* argv[])
 				else if (strcmp(argv[i], "--help") == 0 || strcmp(argv[i], "-h") == 0 && argv[i + 1] == NULL) {
 					help();
 				}
-				else {
-					std::cout << "Wrong Arguments" << std::endl;
-					break;
-				}
-
-				
-
-				// Command line argument for invert image
-				if (strcmp(argv[i], "--threshold") == 0) {
-					std::cout << "This action still under development" << std::endl;
+				else if(strcmp(argv[i], "--threshold") == 0) { // Commad line args for threshold method
+					std::cout << "This method still under development" << std::endl;
 
 					// Under development
 					/*cv::Mat buff = loadImage(argv[i + 1]);
@@ -110,7 +102,16 @@ int main(int argc, char* argv[])
 						std::cout << success_message << "([CTRL + C] to exit" << std::endl;
 						char c = (char)cv::waitKey(10);
 					}*/
+				} 
+				else {
+					std::cout << "Wrong Arguments" << std::endl;
+					break;
 				}
+
+				
+
+				// Command line argument for invert image
+				
 			}
 		}
 	}
@@ -218,7 +219,6 @@ int main(int argc, char* argv[])
 				system("pause");
 				count = 1;
 				break;
-
 			}
 		}
 	}
@@ -343,7 +343,7 @@ void help() {
 	printf("  =========================                                                    \n");
 	printf(" |           HELP          |                                                   \n");
 	printf("  ========================= -----------------------------------------------    \n");
-	printf("  Command line args : imgproc [actions] [option] [input] [output]              \n\n");
+	printf("  Command line args : imgproc [method] [option] [input] [output]               \n\n");
 	printf("  1. Convert Image (--convert)                                                  \n");
 	printf("     you may convert images in .jpg format into a monochrome one.              \n");
 	printf("                                                                               \n");
