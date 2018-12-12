@@ -5,7 +5,7 @@ an open source project [![Open Source Love](https://badges.frapsoft.com/os/v1/op
 ImgProc is a lightweight software image processing tools available only on Windows 64 platform. This software able to perform
 simple image processing technique such as converting image to grayscale/monochrome, noise reduction using gaussian blur and homogeneous blur.
 
-## Dependencies
+## Requirements
 1. Windows 64-bit
 2. OpenCV Library (more information [click here](https://opencv.org/)
 3. Visual Studio 2017 + Visual C++ build tools
