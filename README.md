@@ -32,7 +32,7 @@ any dependencies needed as shown above installed/available in your computer.
 This problem occurs when the ```dll```s file needed is not found. Please copy all ```dll```s to installation/binaries directory
 
 ## Wiki
-For further information, look at [Wiki](wiki)
+For further information, look at [Wiki](https://github.com/faizainur/imgproc/wiki)
 
 ## License
 
