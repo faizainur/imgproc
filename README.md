@@ -2,13 +2,16 @@
 an open source project [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 ## Description
-ImgProc is a lightweight software image processing tools available only on Windows 64 platform. This software able to perform
-simple image processing technique such as converting image to grayscale/monochrome, noise reduction using gaussian blur and homogeneous blur.
+ImgProc is a lightweight software image processing tools available only on Windows 64-bit platform. This software able to perform
+simple image processing technique such as converting image to grayscale, noise reduction using gaussian blur and homogeneous blur.
 
-## Dependencies
+## Requirements
 1. Windows 64-bit
 2. OpenCV Library (more information [click here](https://opencv.org/)
 3. Visual Studio 2017 + Visual C++ build tools
+
+## Download Installer
+Instead of build the software by yourself to get the binaries, you can download installer package for this project [here](https://sourceforge.net/projects/imgproc/files/imgproc-setup-alpha-release-101.zip/download)
 
 ## Build source code
 Get the source code: </br>
@@ -27,6 +30,9 @@ any dependencies needed as shown above installed/available in your computer.
 
 2. Program won't to start</br>
 This problem occurs when the ```dll```s file needed is not found. Please copy all ```dll```s to installation/binaries directory
+
+## Wiki
+For further information, look at [Wiki](https://github.com/faizainur/imgproc/wiki)
 
 ## License
 
