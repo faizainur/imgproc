@@ -26,7 +26,6 @@ int main(int argc, char* argv[])
 	int result;
 	int choice, count;
 
-
 	// Detect if there are any command line args
 	if (argc > 1) {
 		for (int i = 0; i < argc; ++i) {
@@ -228,26 +227,30 @@ int main(int argc, char* argv[])
 cv::Mat loadImage(std::string filename) {
 	cv::Mat buff;
 	buff = imread(filename, cv::IMREAD_COLOR); // Load image
-
+	
 	// Check if invalid image
 	if (buff.empty()) {
 		MessageBox(0, TEXT("Invalid image input"), TEXT("Error"), MB_OK);
 		std::cout << "Invalid image input" << std::endl;
+		exit(EXIT_FAILURE);
 	}
 	return buff;
 }
 
 int convImgMonochrome(cv::Mat img_src, std::string save_filename) {
 	cv::Mat img_conv;
+
+	// Convert image to grayscale
 	cv::cvtColor(img_src, img_conv, cv::COLOR_BGR2GRAY);
 
+	// Write image file
 	cv::imwrite(save_filename, img_conv);
 
+	// Create window
 	cv::namedWindow("Image Source", cv::WINDOW_AUTOSIZE);
 	cv::namedWindow("Result", cv::WINDOW_AUTOSIZE);
 
-
-
+	// Show image in window
 	cv::imshow("Image Source", img_src);
 	cv::imshow("Result", img_conv);
 

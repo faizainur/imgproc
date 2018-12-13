@@ -13,9 +13,6 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Libs">
-      <UniqueIdentifier>{fc78cfcf-a289-45dc-a283-7491ceeae92c}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -29,22 +26,6 @@
     <ClCompile Include="FinalProject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="..\x64\Debug\opencv_world343.dll">
-      <Filter>Libs</Filter>
-    </None>
-    <None Include="..\x64\Debug\opencv_world343d.dll">
-      <Filter>Libs</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="..\x64\Debug\opencv_world343.lib">
-      <Filter>Libs</Filter>
-    </Library>
-    <Library Include="..\x64\Debug\opencv_world343d.lib">
-      <Filter>Libs</Filter>
-    </Library>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Instruction.txt" />
