@@ -38,5 +38,5 @@ For further information, look at [Wiki](https://github.com/faizainur/imgproc/wik
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
 ## Credits
 * Faiz Ainur Rofiq (1706985956)
-* Surya Asmoro Y.P. 
+* Surya Asmoro Y.P. (1706042926)
 
